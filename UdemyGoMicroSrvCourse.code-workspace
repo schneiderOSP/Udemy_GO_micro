@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "front-end"
+		},
+		{
+			"path": "broker-service"
+		},
+		{
+			"path": "project"
+		},
+		{
+			"name": "Udemy_GO_micro",
+			"path": "."
+		}
+	]
+}
