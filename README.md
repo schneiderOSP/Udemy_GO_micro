@@ -9,7 +9,8 @@ When I save the log data from browsers dev tools I get:
        POST http://localhost:8080/ net::ERR_CONNECTION_RESET (anonymous) @ (index):64
 
 and
-	Unchecked runtime.lastError: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+	
+ 	Unchecked runtime.lastError: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
 
 Is it sth about the docker/compose stuff? Or CORS?
 
