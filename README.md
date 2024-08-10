@@ -6,13 +6,13 @@ Question: Ch14 results in error on TEst microservices page (in Chromium-based br
 
 When I save the log data from browsers dev tools I get:
 
-       POST http://localhost:8080/ net::ERR_CONNECTION_RESET
-(anonymous) @ (index):64
+       POST http://localhost:8080/ net::ERR_CONNECTION_RESET (anonymous) @ (index):64
 
 Is it sth about the docker/compose stuff? Or CORS?
 
 In Firefox however this got logged all the time:
-Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8080/. (Reason: CORS request did not succeed). Status code: (null).
+
+	Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8080/. (Reason: CORS request did not succeed). Status code: (null).
 
 But as the 	
 
