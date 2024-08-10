@@ -16,8 +16,8 @@ In Firefox however this got logged all the time:
 
 But as the 	
 
-mux.Use(cors.Handler(cors.Options{
-		AllowedOrigins:   []string{"https://*", "http://*"},
+	mux.Use(cors.Handler(cors.Options{
+			AllowedOrigins:   []string{"https://*", "http://*"},
 
 allows all http at once, I'm not sure why this CORS-error comes up. 
 
