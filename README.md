@@ -1,4 +1,4 @@
-Question: Ch14 results in error on TEst microservices page:
+Question: Ch14 results in error on TEst microservices page (in Chromium-based browsers like Chromium or Vivaldi):
 
   Output shows here...
   
@@ -9,10 +9,11 @@ When I save the log data from browsers dev tools I get:
        POST http://localhost:8080/ net::ERR_CONNECTION_RESET
 (anonymous) @ (index):64
 
-Is it sth about the docker/compose stuff?
+Is it sth about the docker/compose stuff? Or CORS?
 
-In Firefox this got logged all the time:
+In Firefox however this got logged all the time:
 Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8080/. (Reason: CORS request did not succeed). Status code: (null).
+
 But as the 	
 
 mux.Use(cors.Handler(cors.Options{
