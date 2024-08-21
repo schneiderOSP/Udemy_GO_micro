@@ -12,6 +12,9 @@
 		{
 			"name": "Udemy_GO_micro",
 			"path": "."
+		},
+		{
+			"path": "authentication-service"
 		}
 	]
 }
