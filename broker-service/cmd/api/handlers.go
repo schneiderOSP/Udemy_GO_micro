@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	"log"
 	"net/http"
 )
 
@@ -37,20 +38,20 @@ func (app *Config) Broker(w http.ResponseWriter, r *http.Request) {
 
 func (app *Config) HandleSubmission(w http.ResponseWriter, r *http.Request) {
 	var requestPayload RequestPayload
-
+	log.Println("hit broker-HandleSubmission 1")
 	err := app.readJson(w, r, &requestPayload)
 	if err != nil {
 		app.errorJson(w, err)
 		return
 	}
-
+	log.Println("hit broker-HandleSubmission 2")
 	switch requestPayload.Action {
 	case "auth":
 		app.authenticate(w, requestPayload.Auth)
 	default:
 		app.errorJson(w, errors.New("unknown action"))
 	}
-
+	log.Println("hit broker-HandleSubmission 3")
 }
 
 func (app *Config) authenticate(w http.ResponseWriter, a AuthPayload) {

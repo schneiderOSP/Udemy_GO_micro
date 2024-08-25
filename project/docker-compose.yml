@@ -6,7 +6,7 @@ services:
       dockerfile: broker-service.dockerfile
     restart: always
     ports:
-      - "4000:4000"
+      - "4000:80"
     deploy:
       mode: replicated
       replicas: 1
@@ -17,7 +17,7 @@ services:
       dockerfile: authentication-service.dockerfile
     restart: always
     ports:
-      - "4001:4000"
+      - "4001:80"
     deploy:
       mode: replicated
       replicas: 1
